@@ -17,10 +17,11 @@
 5. Give your secret user full `sudo` access without the need for a password:
    -  `visudo` 
 
-![](Images%5Cgive-secret-user-sudo-access.jpg)
+![](Images/give-secret-user-sudo-access.jpg)
 <br>
 <br>
-![sudo -k to clear existing password cache.](Images%5Csysd-user-execute-commands-%20with-sudo.jpg)
+
+![](Images/sysd-commands-with-sudo.jpg)
     
 - `sudo -k` to clear existing password cache.
 <br>
@@ -28,7 +29,7 @@
 
 6. Test that `sudo` access works without your password:
 
-![](Images%5Cno-password-needed.jpg)
+![](Images/no-password-needed.jpg)
 
 <br>
 
@@ -36,7 +37,7 @@
 
 1. Edit the `sshd_config` file:
 
-![](Images%5Cssh-port-2222.jpg)
+![](Images/ssh-port-2222.jpg)
 
 <br>
 
@@ -48,10 +49,12 @@
     - `exit`
 
 3. SSH to the target machine using your `sysd` account and port `2222`:
-![](Images%5Cssh-sysd.jpg)
+
+![](Images/ssh-sysd.jpg)
 
 4. Use `sudo` to switch to the root user:
-![](Images%5Croot-ssh.jpg)
+
+![](Images/root-ssh.jpg)
 
 **Step 4: Crack All the Passwords**
 
@@ -61,7 +64,7 @@
 
 2. Escalate your privileges to the `root` user. Use John to crack the entire `/etc/shadow` file:
 
-![](Images%5Ccracking-passwords.jpg)
+![](Images/cracking-passwords.jpg)
 ---
 
 
